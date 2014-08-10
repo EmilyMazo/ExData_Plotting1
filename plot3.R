@@ -1,0 +1,6 @@
+png(file="plot3.png")
+with(d, plot(Date, Sub_metering_1, col="black", ylab="Energy sub metering", type="l"))
+with(d, points(Date, Sub_metering_2, col="red", type="l"))
+with(d, points(Date, Sub_metering_3, col="blue", type="l"))
+legend("topright", lty=c(1, 1, 1), col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+dev.off()
